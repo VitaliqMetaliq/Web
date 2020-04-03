@@ -1,0 +1,405 @@
+/* font-family: 'Montserrat', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Regular;
+    font-size: 16px;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 30px;
+    z-index: 10;
+}
+
+.fixed-container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* Основная кнопка */
+.main-btn {
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #ff6f83;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #ff6f83;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.main-btn:hover {
+    color: white;
+    background-color: #ff6f83;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-logo {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.header-nav {
+    display: inline-block;
+    margin-left: 26px;
+}
+
+.header-nav ul {
+    list-style-type: none;
+}
+
+.header-nav ul li {
+    display: inline-block;
+}
+
+.header-nav ul li a {
+    color: white;
+    margin-right: 24px;
+}
+
+.header-right .main-btn {
+    color: white; 
+    border-color: white;
+}
+
+/* MAIN-TOPIC */
+
+.main-heading {
+    padding-top: 275px;
+    padding-bottom: 244px;
+    position: relative;
+    background-image: url("img/first-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-topic {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    font-size: 72px;
+}
+
+.main-topic-descr {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+    letter-spacing: 0.75px;
+}
+
+.main-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -27px;
+    width: 973px;
+    font-size: 0;
+}
+
+.main-form input {
+    height: 55px;
+    border: 1px solid #e6e6e6;
+    width: 34.5%;
+}
+
+.main-form input::placeholder {
+    color: #818181;
+    padding-left: 32px;
+}
+
+.main-form input:nth-child(2) {
+    border-left: none;
+}
+
+.main-form .small-input {
+    width: 18.9%;
+    border-left: none;
+}
+
+.main-form button {
+    width: 12.1%;
+    height: 55px;
+    border: none;
+    background-color: #ff4b64;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.main-form button:hover {
+    background-color: #fb7689;
+    transition: background-color 0.15s;
+}
+
+/* Основная часть */
+
+.flights {
+    background-color: white;
+    padding-top: 100px;
+}
+
+.flights-heading, .hotels-heading {
+    color: #484848;
+    font-size: 30px;
+    float: left;
+}
+
+.flights-links, .hotels-links {
+    float: right;
+}
+
+.flights-links ul {
+    list-style-type: none;
+}
+
+.flights-links ul li {
+    display: inline-block;
+}
+
+.flights-links ul li a {
+    color: black;
+    margin-left: 26px;
+    line-height: 32px;
+}
+
+.flights-links ul li:first-child a {
+    color: #ff6f83;
+    font-weight: 700;
+}
+
+/* ТАБЛИЦА */
+
+.flights-table {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.flights-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.flights-table table thead  {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.flights-table table thead td {
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.flights-table table thead td:first-child {
+    text-align: left;
+}
+
+.flights-table table tbody tr {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.flights-table table tbody td {
+    padding: 45px 0;
+    text-align: center;
+}
+
+.flights-table table tbody td:first-child {
+    text-align: left;
+}
+
+.flights-table table tbody td:last-child {
+    text-align: center;
+}
+
+.flights-table table tbody td span {
+    display: block;
+    margin-top: 15px;
+    color: #9a9a9a;
+}
+
+.flights-table table tbody td img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flights-table .table-text {
+    display: inline-block;   
+    vertical-align: middle;
+    margin-left: 23px;
+}
+
+.flights-link {
+    text-align: right;
+    margin-top: 42px;
+}
+
+.flights-link a {   
+    color: black;
+}
+
+/* ------- ОТЕЛИ ------- */
+/* Заголовки */
+.hotels {
+    padding-top: 75px;
+    margin-bottom: 50px;
+}
+
+.hotels-links ul {
+    list-style-type: none;
+
+}
+
+.hotels-links ul li {
+    display: inline-block;
+}
+
+.hotels-links ul li a {
+    color: black;
+    margin-left: 26px;
+    line-height: 40px;
+} 
+
+.hotels-links ul li:first-child a {
+    color: #ff6f83;
+    font-weight: 700;
+}
+
+/* Карточки */
+
+.hotels-items {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.hotels-item {
+    float: left;
+    margin-right: 27px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 30px;
+}
+
+.hotels-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.hotel-title {
+    padding-top: 23px;
+    padding-left: 15px;
+}
+
+.hotel-props {
+    color: #9a9a9a;
+    padding: 22px 15px;
+}
+
+.hotel-distance {
+    float: left;
+}
+
+.hotel-service {
+    float: right;
+}
+
+.hotels-item .main-btn {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.hotels-link {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.hotels-link a {
+    color: black;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.footer .fixed-container {
+    font-size: 0;
+}
+
+.footer-column {
+    width: 22.6%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-column:nth-child(2) {
+    width: 26%;
+}
+
+.footer-column:nth-child(3) {
+    width: 26.3%;
+}
+
+.footer-column:last-child {
+    width: 24.7%;
+}
+
+.footer-title {
+    color: #484848;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 22px;
+}
+
+.contact-text {
+    display: inline-block;
+    width: 100%;
+}
+
+.footer-mail {
+    display: inline-block;
+    color: #ff4b64;
+    margin-top: 20px;
+}
+
+
+

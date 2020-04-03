@@ -1,0 +1,516 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), 
+    url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fixed-container {
+    max-width: 925px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.active {
+    color: #f82370;
+    border-bottom: 1px solid #f82370;
+}
+
+/* Верхний блок */
+
+.header {
+    padding-top: 22px;
+    background-color: #fbfbfb;
+}
+
+.menu-item {
+    display: none;
+    cursor: pointer;
+    padding-right: 45px; 
+    padding-top: 32px;
+    background-image: url("../img/menu.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.header-nav {
+    padding-top: 12px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.header-nav ul {
+    list-style-type: none;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.top-contact {
+    /* display: none; */
+    float: right;
+}
+
+.low-screen-tel {
+    display: none;
+}
+
+.call-icon {
+    display: none;
+    /* padding-top: 26px;
+    padding-left: 26px;  */
+    /* align-self: bottom; */
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/call-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-tel {
+    font-size: 21px;
+    margin-right: 18px;
+    color: #1f1f24;
+}
+
+.order-btn {
+    border: none;
+    width: 164px;
+    height: 37px;
+    font-size: 13px;
+    color: #f82370;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #f82370;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.order-btn:hover {
+    color: white;
+    background-color: #f82370;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+/* ГЛАВНЫЙ ЗАГОЛОВОК */
+
+.main-heading {
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.main-heading .fixed-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-head {
+    padding-bottom: 120px;
+}
+
+.name {
+    font-size: 63px;
+    margin-bottom: 17px;
+    font-weight: 900;
+}
+
+.name-descr {
+    display: inline-block;
+    color: #8993ad;
+    font-size: 20px;
+}
+
+.main-btn {
+    display: block;
+    width: 214px;
+    height: 46px;
+    margin-top: 35px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #ff4e2e;
+    transition: background-color 0.15s;
+}
+
+.main-btn:hover {
+    background-color: #fc6a4f;
+    transition: background-color 0.15s;
+}
+
+.photo {
+    position: relative;
+    left: 5%;
+    max-height: 487px;
+    /* width: 35%; */
+    z-index: 10;
+    filter: drop-shadow(5px 5px 16px rgba(100, 0, 0, 0.4));
+}
+
+.low-screen-heading {
+    display: none;
+}
+
+.low-screen-heading .name {
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+}
+
+.low-screen-heading .name-descr {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+.low-screen-heading .main-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SVG BACKGROUND */
+
+ .svg-bg {
+    width: 644px;
+    height: 500px;
+    position: absolute;
+    left: 57.6%;
+    top: 8.7%;
+    background-image: url("../img/main-about__photo-background.svg");
+    background-repeat: no-repeat;
+    background-size: 114%;
+} 
+
+.svg-group {
+    /* fill: url(#linear-gradient); */
+    fill: red;
+    /* background-color: linear-gradient(to right top, #ff8b5d, #ff2f96); */
+}
+
+/* ---------------- ОСНОВНАЯ ЧАСТЬ ------------------- */
+
+/* --- СЕКЦИЯ "Что я делаю" --- */
+
+.job-section {
+    padding-top: 72px;
+    padding-bottom: 70px;
+}
+
+.job-section .main-btn {
+    margin: 75px auto 0 auto;
+}
+
+.alt-heading {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+}
+
+.skills-list-item {
+    /* width: 23%; */
+    width: 230px;
+}
+
+.skills-list-item img {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skills-list-item span {
+    display: inline-block;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #8993ad;
+    font-size: 16px;
+}
+
+/* --- СЕКЦИЯ "Примеры моих работ" --- */
+
+.projects-section {
+    background-color: #fbfbfb;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.projects-section .main-btn {
+    margin: 81px auto 0 auto;
+}
+
+.projects-section .fixed-container {
+    position: relative;
+}
+
+.slider {
+    padding-top: 50px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.slider-item {
+    width: 30%;
+    margin-right: 40px;
+    padding-bottom: 20px;
+}
+
+.slider-item span {
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px; 
+    text-align: center;
+    color: #8993ad;
+}
+
+.slider-select {
+    display: none;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.radio {
+    width: 17px;
+    height: 17px;
+}
+.radio:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.radio:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 35px;
+}
+.radio:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #CDD1DA;
+    border-radius: 50%;
+    background: #FFF;
+}
+.radio:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff4e2e;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: all .2s;
+}
+.radio:checked + label:after {
+    opacity: 1;
+}
+
+.slider-select input {
+    margin-right: 10px;
+}
+
+.prev {
+    position: absolute;
+    top: 40%;
+    left: -3.5%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.4);
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+}
+
+.next {
+    position: absolute;
+    top: 40%;
+    left: 95%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    transform: scale(-1,1);
+    box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.4);
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+}
+
+/* Секция ЦЕНЫ */
+
+.price-section {
+    background: linear-gradient(to right top, #ff8b5d, #ff2f96);
+    padding-bottom: 55px;
+}
+
+.price-heading {
+    color: white;
+    font-size: 34px;
+    text-align: center;
+    line-height: 150%;
+    padding-top: 55px;
+}
+
+.alt-price-heading {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    line-height: 150%;
+}
+
+/* Секция КОНТАКТЫ */
+
+.contacts-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.left-list, .central-list, .social-list {
+    list-style-type: none;
+}
+
+.left-list li { 
+    margin-bottom: 10px;
+}
+
+.left-list li a {
+    color: #8993ad;
+    font-size: 14px;
+}
+
+.central-list li {
+    margin-bottom: 20px;
+}
+
+.fa-phone-alt:before, .fa-envelope:before {
+    margin-right: 15px; 
+    color: #ff2f96;
+}
+
+.fa-phone-alt, .fa-envelope {
+    color: black;
+    font-size: 20px;
+    /* font-family: 'Roboto' !important; */
+}
+
+.social-list { 
+    margin-top: 20px;
+}
+
+.social-list li { 
+    display: inline-block;
+}
+
+.social-list li a { 
+    padding-left: 40px; 
+    padding-bottom: 30px; 
+    background-image: url("../img/social-sprite.png");
+    background-repeat: no-repeat;
+}
+
+.vk {
+    background-position: 0 11px;
+}
+
+.fb { 
+    background-position: 0 -40px;
+}
+
+.tw {
+    background-position: 0 -90px;
+}
+
+.inst {
+    background-position: 0 -140px;
+}
+
+/* --- Foot-bar --- */
+
+.foot-bar { 
+    background-color: #31293c;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
+.foot-info {
+    display: block;
+    color: #a4a1a7; 
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}

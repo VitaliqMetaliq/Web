@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/solid.css">
+    <link rel="stylesheet" href="styles/solid.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
+    <!-- ПОДКЛЮЧЕНИЕ СТИЛЕЙ СЛАЙДЕрА -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/> -->
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <title>My landing page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="fixed-container clearfix">
+            <span class="menu-item"></span>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#" class="active">Портфолио</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                </ul>
+            </nav>
+            <div class="top-contact">
+                <a href="tel:+74999955577" class="top-tel">+7 (499) 995-55-77</a>
+                <button class="order-btn">Заказать звонок</button>
+                <a href="tel:+74999955577"><div class="call-icon"></div></a>
+            </div>
+            <!-- <a href="tel:+74999955577" class="low-screen-tel top-tel">+7 (499) 995-55-77</a> -->
+            <!-- <span class="call-icon"></span> -->
+           
+            <!-- <div class="low-screen-contact">
+
+            </div> -->
+        </div>
+        <div class="main-heading">
+            <div class="fixed-container">
+                <div class="left-head">
+                    <h1 class="name">Дмитрий Алексеев</h1>
+                    <!-- <div class="name">Дмитрий Алексеев</div> -->
+                    <span class="name-descr">Frontend-разработчик и веб-верстальщик</span>
+                    <button class="main-btn">Узнать больше</button>
+                </div>
+                <img src="img/man.png" alt="Фотография Дмитрий Алексеев" class="photo">
+            </div>
+            <svg class="svg-bg">
+                <!-- <defs>
+                    <linearGradient id="linear-gradient">
+                        <stop offset="0%" stop-color="#ff8b5d"/>
+                        <stop offset="100%" stop-color="#ff2f96"/>
+                    </linearGradient>
+                </defs>
+                <g class="svg-group">
+                    <ellipse rx="345" ry="165" cx="75" cy="400" transform="rotate(-45, 20, 90)"/>
+                    <ellipse rx="300" ry="200" cx="620" cy="-50" transform="rotate(60, 287, 30)"/>
+                    <circle r="150" cx="340" cy="400"/>
+                </g> -->
+            </svg>
+        </div>
+    </header>
+    <main class="main">
+        <div class="low-screen-heading">
+            <div class="fixed-container">
+                <h1 class="name">Дмитрий Алексеев</h1>
+                <!-- <div class="name">Дмитрий Алексеев</div> -->
+                <span class="name-descr">Frontend-разработчик и веб-верстальщик</span>
+                <button class="main-btn">Узнать больше</button>
+            </div>
+        </div>
+        <div class="job-section">
+            <div class="fixed-container">
+                <h2 class="alt-heading">Что я делаю</h2>
+                <!-- Список через DISPLAY FLEX -->
+                <ul class="skills-list">
+                    <li class="skills-list-item">
+                        <img src="img/j1.png" alt="Иконка вёрстки">
+                        <span>
+                            Вёрстка лендинг-страниц и сайтов любой сложности
+                        </span>
+                    </li>
+                    <li class="skills-list-item">
+                        <img src="img/j2.png" alt="Иконка вёрстки">
+                        <span>
+                            Адаптивная вёрстка под все браузеры и устройства
+                        </span>
+                    </li>                       
+                    <li class="skills-list-item">
+                        <img src="img/j3.png" alt="Иконка вёрстки">
+                        <span>
+                            Frontend-разработка и программирование 
+                        </span>
+                    </li>
+                    <li class="skills-list-item">
+                        <img src="img/j4.png" alt="Иконка вёрстки">
+                        <span>
+                            Исправление и доработка существующей вёрстки
+                        </span>
+                    </li>
+                </ul>
+                <button class="main-btn">Узнать стоимость</button>
+            </div>
+        </div>
+        <div class="projects-section">
+            <div class="fixed-container">
+                <h2 class="alt-heading">Примеры моих работ</h2>
+                <!-- Реализовать слайдер с помощью плагина Slick на JQuery -->
+                
+                <!-- <div class="slider-select">
+                    <input type="radio" name="slider" id="radio1" class="radio">
+                    <label for="radio1"></label>
+                    <input checked type="radio" name="slider" id="radio2" class="radio">
+                    <label for="radio2"></label>
+                    <input type="radio" name="slider" id="radio3" class="radio">
+                    <label for="radio3"></label>
+                </div> -->
+                <div class="slider">
+                    <div class="slider-item">
+                        <img src="img/p1.png" alt="Изображение сайта психолога Веры Антоновой">
+                        <span>Сайт психолога Веры Антоновой</span>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/p2.png" alt="Изображение ребенка">
+                        <span>Сайт магазина детской одежды</span>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/p3.png" alt="Изображение рыбака">
+                        <span>Сайт магазина "Рыболов"</span>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/p4.png" alt="Изображение ласточкино гнездо">
+                        <span>Сайт новостного агенства</span>
+                    </div>
+                </div>
+                <button class="main-btn">Заказать проект</button>
+                <div class="custom-arrows">
+                    <button type = "button" class = "prev"></button>
+                    <button type = "button" class = "next"></button>
+                </div>
+            </div>
+        </div>
+        <div class="price-section">
+            <div class="fixed-container">
+                <h2 class="price-heading">
+                    Адаптивная вёрстка под все устройства<br> и браузеры от 1000 рублей всего за 4 часа.*
+                </h2>
+                <span class="alt-price-heading">
+                    * Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,<br>
+                    в зависимости от сложности задач.
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="fixed-container">
+            <div class="contacts-section">
+                <!-- <i class="fas fa-phone-alt">fdfd</i> -->
+                <ul class="left-list">
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                </ul>
+                <ul class="central-list">
+                    <li><a href="tel:+74999957755" class="fas fa-phone-alt">+7 (499) 995-77-55</a></li>
+                    <li><a href="mailto:dmitry@alekseev.com" class="fas fa-envelope">dmitry@alekseev.com</a></li>
+                </ul>
+                <div class="right-part">
+                    <button class="order-btn">Заказать звонок</button>
+                    <ul class="social-list">
+                        <li><a href="https://vk.com/" class="vk"></a></li>
+                        <li><a href="https://facebook.com" class="fb"></a></li>
+                        <li><a href="https://twitter.com" class="tw"></a></li>
+                        <li><a href="https://instagram.com" class="inst"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bar">
+            <div class="fixed-container">
+                <span class="foot-info">&copy; Дмитрий Алексеев, 2016-2018</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Подключение плагина слайдера Slick jquery  -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script> -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

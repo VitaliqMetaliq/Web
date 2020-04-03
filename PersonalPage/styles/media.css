@@ -1,0 +1,236 @@
+ /* Несколько шагов адаптивности */
+ @media (max-width: 1024px) and (min-width: 701px) {
+     .fixed-container {
+         padding: 0 22px;
+     }
+     .custom-arrows {
+         display: none;
+     }
+     .svg-bg {
+         left: 52.6%;
+     }
+     .photo {
+         left: 0%;
+     }
+     .header-nav {
+         display: none;
+     }
+     .menu-item {
+         display: inline-block;
+     }
+     .name {
+         font-size: 54px;
+     }
+     .slider-item {
+         width: 40%;
+         margin-right: 0;
+     }
+     .slider-item img {
+         position: relative;
+         left: 50%;
+         transform: translateX(-50%);
+     }
+     .slider {
+        justify-content: space-around;
+     }
+     .skills-list-item {
+         width: 45%;
+     }
+     .skills-list-item:nth-child(3), .skills-list-item:nth-child(4) {
+         margin-top: 30px;
+     }
+     .skills-list {
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+     .skills-list-item span {
+        position: relative;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+     
+ }
+
+ @media (max-width: 700px) and (min-width: 481px) {
+    .fixed-container {
+        padding: 0 22px;
+    }
+    .custom-arrows {
+        display: none;
+    }
+    .left-head {
+        display: none;
+    }
+    .low-screen-heading {
+        display: block;
+    }
+    .svg-bg {
+        left: 9.6%;
+    }
+    .photo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header-nav {
+        display: none;
+    }
+    .menu-item {
+        display: inline-block;
+    }
+    .slider-item {
+        width: 40%;
+        margin-right: 0;
+    }
+    .slider-item img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slider {
+       justify-content: space-around;
+    }
+    .skills-list-item {
+        width: 45%;
+    }
+    .skills-list-item:nth-child(3), .skills-list-item:nth-child(4) {
+        margin-top: 30px;
+    }
+    .skills-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skills-list-item span {
+       position: relative;
+       width: 80%;
+       left: 50%;
+       transform: translateX(-50%);
+   }
+ }
+
+ @media (max-width: 640px) {
+     .custom-arrows {
+        display: none;
+    }
+     .skills-list-item {
+         width: 60%;
+         margin-top: 40px;
+     }
+     .contacts-section {
+         flex-wrap: wrap;
+         justify-content: flex-start;
+     }
+     .left-list {
+         width: 60%;
+     }
+     .central-list { 
+         width: 60%;
+         margin-top: 30px;
+     }
+     .right-part {
+         width: 60%;
+         margin-top: 30px;
+     }
+ }
+
+ @media (max-width: 480px) {
+    .fixed-container {
+        padding: 0 22px;
+    }
+    .custom-arrows {
+        display: none;
+    }
+    .low-screen-heading .name {
+        font-size: 28px;
+    }
+    .low-screen-heading .name-descr {
+        text-align: center;
+    }
+    .left-head {
+        display: none;
+    }
+    .low-screen-heading {
+        display: block;
+    }
+    .svg-bg {
+        height: 400px;
+        left: -34.4%;
+        top: 13%;
+    }
+    .photo {
+        left: 50%;
+        transform: translateX(-50%);
+        height: 400px;
+    }
+    .header-nav {
+        display: none;
+    }
+    .menu-item {
+        display: inline-block;
+        padding-right: 33px; 
+        padding-top: 26px;
+    }
+    .header .order-btn {
+        display: none;
+    }
+    .top-contact {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    .call-icon {
+        display: inline-block;
+        align-self: flex-end;
+    }
+    .slider-item {
+        width: 40%;
+        margin-right: 0;
+    }
+    .slider-item img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 276px;
+    }
+    .slider {
+       justify-content: space-around;
+    }
+    .skills-list-item {
+        width: 90%;
+        margin-top: 40px;
+    }
+    .skills-list-item:nth-child(3), .skills-list-item:nth-child(4) {
+        margin-top: 30px;
+    }
+    .skills-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .skills-list-item span {
+       position: relative;
+       width: 80%;
+       left: 50%;
+       transform: translateX(-50%);
+   }
+   .left-list {
+    width: 70%;
+    }
+    .central-list { 
+        width: 70%;
+        margin-top: 30px;
+    }
+    .right-part {
+        width: 70%;
+        margin-top: 30px;
+    }
+    .price-heading { 
+        font-size: 24px;
+        text-align: left;
+    }
+    .alt-price-heading {
+        text-align: left;
+    }
+ }
+
+ 

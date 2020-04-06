@@ -98,7 +98,6 @@ a {
 }
 
 .top-contact {
-    /* display: none; */
     float: right;
 }
 
@@ -108,9 +107,6 @@ a {
 
 .call-icon {
     display: none;
-    /* padding-top: 26px;
-    padding-left: 26px;  */
-    /* align-self: bottom; */
     cursor: pointer;
     width: 26px;
     height: 26px;
@@ -195,7 +191,6 @@ a {
     position: relative;
     left: 5%;
     max-height: 487px;
-    /* width: 35%; */
     z-index: 10;
     filter: drop-shadow(5px 5px 16px rgba(100, 0, 0, 0.4));
 }
@@ -222,6 +217,44 @@ a {
     margin-right: auto;
 }
 
+/* --- ЛЕТАЮЩИЕ ТЕГИ top --- */
+
+.flat-elements {
+    position: relative;
+}
+
+.main-heading .flat-elements span {
+    position: absolute;
+    top: 250px;
+    left: 25%;
+    font-weight: bold;
+    background: linear-gradient(to right top, #ff8b5d, #ff2f96);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(0);
+    transition: top 1s ease-out, left 1s ease-out, transform 1s ease-out, font-size 1s ease-out;
+    -webkit-transition: top 1s ease-out, left 1s ease-out, transform 1s ease-out, font-size 1s ease-out;
+    -moz-transition: top 1s ease-out, left 1s ease-out, transform 1s ease-out, font-size 1s ease-out;
+    -o-transition: top 1s ease-out, left 1s ease-out, transform 1s ease-out, font-size 1s ease-out;
+}
+
+.flat-elements__top1 {
+    font-size: 38px;
+}
+.flat-elements__top2 {
+    font-size: 24px;
+}
+.flat-elements__top3 {
+    font-size: 48px;
+}
+.flat-elements__top4 {
+    font-size: 34px;
+}
+.flat-elements__top5 {
+    font-size: 30px;
+}
+
 /* SVG BACKGROUND */
 
  .svg-bg {
@@ -234,12 +267,6 @@ a {
     background-repeat: no-repeat;
     background-size: 114%;
 } 
-
-.svg-group {
-    /* fill: url(#linear-gradient); */
-    fill: red;
-    /* background-color: linear-gradient(to right top, #ff8b5d, #ff2f96); */
-}
 
 /* ---------------- ОСНОВНАЯ ЧАСТЬ ------------------- */
 
@@ -429,6 +456,48 @@ a {
     width: 100%;
     margin-top: 30px;
     line-height: 150%;
+}
+
+/* Летающие теги bottom */
+
+.price-section .flat-elements span {
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    transition: top 1s ease-out, left 1s ease-out, font-size 1s ease-out;
+    -webkit-transition: top 1s ease-out, left 1s ease-out, font-size 1s ease-out;
+    -moz-transition: top 1s ease-out, left 1s ease-out, font-size 1s ease-out;
+    -o-transition: top 1s ease-out, left 1s ease-out, font-size 1s ease-out;
+}
+.flat-elements__bot1 {
+    font-size: 36px;
+    left: 7%;
+    top: -200px;
+    transform: rotate(30deg);
+}
+.flat-elements__bot2 {
+    font-size: 40px;
+    left: 13%;
+    top: -49px;
+    transform: rotate(20deg);
+}
+.flat-elements__bot3 {
+    font-size: 30px;
+    left: 86.4%;
+    top: -189px;
+    transform: rotate(-21deg);
+}
+.flat-elements__bot4 {
+    font-size: 30px;
+    left: 74%;
+    top: -9px;
+    transform: rotate(20deg);
+}
+.flat-elements__bot5 {
+    font-size: 37px;
+    left: 92%;
+    top: -43px;
+    transform: rotate(-17deg);
 }
 
 /* Секция КОНТАКТЫ */

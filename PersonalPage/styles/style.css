@@ -61,7 +61,7 @@ a {
 }
 
 .active {
-    color: #f82370;
+    color: #f82370 !important;
     border-bottom: 1px solid #f82370;
 }
 
@@ -95,6 +95,31 @@ a {
 .header-nav ul li {
     display: inline-block;
     margin-right: 20px;
+}
+
+.header-nav__link {
+    color: black;
+}
+
+/* Мобильное меню */
+.slide-menu {
+    position: absolute;
+    left: 22px;
+    top: 0;
+    width: 300px; 
+    display: none;
+    /* z-index: 10; */
+    /* background-color: #fbfbfb; */
+}
+
+.slide-menu ul {
+    list-style-type: none;
+}
+
+.slide-menu ul li {
+    margin-top: 10px;
+    padding-bottom: 5px;
+    /* border-bottom: 1px solid red; */
 }
 
 .top-contact {

@@ -19,9 +19,9 @@
             <span class="menu-item"></span>
             <nav class="header-nav">
                 <ul>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#" class="active">Портфолио</a></li>
-                    <li><a href="#">Стоимость</a></li>
+                    <li><a class="header-nav__link" href="#anchor_job">Услуги</a></li>
+                    <li><a class="header-nav__link active" href="#anchor_projects">Портфолио</a></li>
+                    <li><a class="header-nav__link" href="#anchor_price">Стоимость</a></li>
                 </ul>
             </nav>
             <div class="top-contact">
@@ -37,6 +37,13 @@
                 <span class="flat-elements__top3">#</span>
                 <span class="flat-elements__top4">&lt;/&gt;</span>
                 <span class="flat-elements__top5">&lt;div&gt;</span>
+            </div>
+            <div class="slide-menu clearfix">
+                <ul>
+                    <li><a class="header-nav__link" href="#anchor_job">Услуги</a></li>
+                    <li><a class="header-nav__link" href="#anchor_projects">Портфолио</a></li>
+                    <li><a class="header-nav__link" href="#anchor_price">Стоимость</a></li>
+                </ul>
             </div>
             <div class="fixed-container">
                 <div class="left-head">
@@ -72,7 +79,7 @@
                 <button class="main-btn">Узнать больше</button>
             </div>
         </div>
-        <div class="job-section">
+        <div class="job-section" id="anchor_job">
             <div class="fixed-container">
                 <h2 class="alt-heading">Что я делаю</h2>
                 <!-- Список через DISPLAY FLEX -->
@@ -105,7 +112,7 @@
                 <button class="main-btn">Узнать стоимость</button>
             </div>
         </div>
-        <div class="projects-section">
+        <div class="projects-section" id="anchor_projects">
             <div class="fixed-container">
                 <h2 class="alt-heading">Примеры моих работ</h2>
                 <!-- Реализовать слайдер с помощью плагина Slick на JQuery -->
@@ -143,7 +150,7 @@
                 </div>
             </div>
         </div>
-        <div class="price-section">
+        <div class="price-section" id="anchor_price">
             <div class="fixed-container">
                 <h2 class="price-heading">
                     Адаптивная вёрстка под все устройства<br> и браузеры от 1000 рублей всего за 4 часа.*

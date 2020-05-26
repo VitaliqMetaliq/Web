@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script src="jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
@@ -17,17 +18,29 @@
                     TravelCream
                 </a>
                 <nav class="header-nav">
-                    <ul>
-                        <li><a href="#ancor1" class="link-to-scroll">Flights</a></li>
-                        <li><a href="#">Hotels</a></li>
-                        <li><a href="#">Trips</a></li>
-                        <li><a href="#">Activity</a></li>
-                        <li><a href="#">Deals</a></li>
-                    </ul>
+                    <a href="#" class="header-nav-close">
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="header-nav-wrapper">
+                        <ul>
+                            <li><a href="#anchor1" class="link-to-scroll">Flights</a></li>
+                            <li><a href="#anchor2" class="link-to-scroll">Hotels</a></li>
+                            <li><a href="#">Trips</a></li>
+                            <li><a href="#">Activity</a></li>
+                            <li><a href="#">Deals</a></li>
+                        </ul>
+                        <button class="main-btn mobile-main-btn">Login</button>
+                    </div>
                 </nav>
            </div>
            <div class="header-right">
-                <button class="main-btn">Login</button>
+                <button class="main-btn header-btn">Login</button>
+                <a href="#" class="header-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
            </div>
         </div>
     </header>
@@ -50,7 +63,7 @@
         <section class="flights">
             <div class="fixed-container">
                <div class="flights-top clearfix">
-                <h2 class="flights-heading" id="ancor1">
+                <h2 class="flights-heading" id="anchor1">
                     Flights
                 </h2>
                 <div class="flights-links">
@@ -228,7 +241,7 @@
         <section class="hotels">
             <div class="fixed-container">
                 <div class="hotels-top clearfix">
-                    <h2 class="hotels-heading">
+                    <h2 class="hotels-heading" id="anchor2">
                         Hotels
                     </h2>
                     <div class="hotels-links">
